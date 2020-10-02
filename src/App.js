@@ -1,12 +1,12 @@
 
-import React from "react";
+import React, {Component} from 'react'
 import Header from "./Components/Header/Header";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Form from "./Components/Form/Form";
 import "./App.css";
 import axios from "axios";
 
-class App extends React.Component {
+class App extends Component {
   constructor() {
     super();
     this.state = {
