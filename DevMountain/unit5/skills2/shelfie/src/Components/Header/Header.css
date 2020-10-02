@@ -1,0 +1,10 @@
+.head-box{
+    background-color: red;
+    height: 100px;
+}
+.shelfie{
+    display: flex;
+    color: white;
+    font-size: 45px;
+    
+}
