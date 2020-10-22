@@ -1,0 +1,52 @@
+// import React, { Component } from 'react'
+// import Header from './Components/Header'
+// import Display from './Components/Display'
+// import Favorites from './Components/Favorites'
+// import Gallery from './Components/Gallery'
+// import Stars from './Components/Stars'
+// import './App.css';
+// import axios from 'axios'
+
+import React from 'react';
+import "./App.css";
+import Display from './Components/Display'
+
+
+
+
+
+
+function App() {
+  return (
+    <div className= "App">
+      <Display/>
+      
+    </div>
+  );
+}
+
+
+
+removeFav: (req, res) => {
+    const { id } = req.params;
+    const newFavList = favList.filter(fav => {
+      if (fav.id !== +id) return fav;
+    });
+    favList = [...newFavList] 
+    res.status(200).send(favList);
+  },
+
+
+
+
+ deleteStar = (id) => {
+        axios.delete(`/api/favList/${id}`)
+        .then(res => {
+          this.props.deleteFn(res.data)
+        })
+        .catch(err => console.log(err));
+
+
+
+
+export default App
