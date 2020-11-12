@@ -1,0 +1,21 @@
+.cartProduct{
+    display: flex;
+    margin-top: 20px;
+
+}
+.cartProduct-info{
+    padding-left: 20px;
+
+}
+.cartProduct-info > button{
+    background-color: navy;
+    border: 1px solid;
+    margin-top: 5px;
+    color: white;
+
+}
+.cartProduct-image{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
